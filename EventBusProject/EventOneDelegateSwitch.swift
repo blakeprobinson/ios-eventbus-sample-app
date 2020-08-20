@@ -6,4 +6,13 @@
 //  Copyright © 2020 Verizon Wireless. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class EventOneDelegateSwitch: UISwitch, EventOne {
+    func eventOneDidOccur() {
+        print("EventOne delegate called")
+        DispatchQueue.main.sync {
+            setOn(true, animated: true)
+        }
+    }
+}

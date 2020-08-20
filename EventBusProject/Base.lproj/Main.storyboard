@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,100 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EventBusProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="le9-IF-pSm">
+                                <rect key="frame" x="160.5" y="194" width="93" height="30"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Start Process"/>
+                                <connections>
+                                    <action selector="startProcessTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EqK-HD-JnU"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="znN-0I-dEo" customClass="EventTriggeredSegmentedControl" customModule="EventBusProject" customModuleProvider="target">
+                                <rect key="frame" x="83" y="316" width="248" height="32"/>
+                                <segments>
+                                    <segment title="Start"/>
+                                    <segment title="Event One"/>
+                                    <segment title="End"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Triggered Indicator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPo-0m-XCe">
+                                <rect key="frame" x="111" y="287" width="192.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delegate Triggered Indicator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJd-0p-5DK">
+                                <rect key="frame" x="98" y="405" width="218" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Delegate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZF-5g-FmE">
+                                <rect key="frame" x="83" y="438" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rb8-O5-pYd" customClass="StartDelegateSwitch" customModule="EventBusProject" customModuleProvider="target">
+                                <rect key="frame" x="254" y="433" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgm-ql-NeE">
+                                <rect key="frame" x="187.5" y="550" width="39" height="30"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetProcessTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TXX-qq-3kZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubn-wk-UsZ">
+                                <rect key="frame" x="83" y="467" width="152" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Event One Delegate">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y9X-4H-OnZ" customClass="EventOneDelegateSwitch" customModule="EventBusProject" customModuleProvider="target">
+                                <rect key="frame" x="254" y="467" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LJd-0p-5DK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4NI-7Q-8r4"/>
+                            <constraint firstItem="kgm-ql-NeE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DrQ-N3-4PD"/>
+                            <constraint firstItem="le9-IF-pSm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ERo-J0-rVg"/>
+                            <constraint firstItem="tPo-0m-XCe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="EX7-6k-hHj"/>
+                            <constraint firstItem="Y9X-4H-OnZ" firstAttribute="leading" secondItem="rb8-O5-pYd" secondAttribute="leading" id="FfG-oX-u3x"/>
+                            <constraint firstItem="rb8-O5-pYd" firstAttribute="leading" secondItem="HZF-5g-FmE" secondAttribute="trailing" constant="60" id="Jde-mw-IPO"/>
+                            <constraint firstItem="Ubn-wk-UsZ" firstAttribute="leading" secondItem="HZF-5g-FmE" secondAttribute="leading" id="Qn6-dh-Pe8"/>
+                            <constraint firstItem="HZF-5g-FmE" firstAttribute="top" secondItem="LJd-0p-5DK" secondAttribute="bottom" constant="12" id="T6V-1c-p3D"/>
+                            <constraint firstItem="kgm-ql-NeE" firstAttribute="top" secondItem="Ubn-wk-UsZ" secondAttribute="bottom" constant="50" id="TSt-JJ-kFL"/>
+                            <constraint firstItem="tPo-0m-XCe" firstAttribute="top" secondItem="le9-IF-pSm" secondAttribute="bottom" constant="63" id="X4o-Op-551"/>
+                            <constraint firstItem="Y9X-4H-OnZ" firstAttribute="top" secondItem="rb8-O5-pYd" secondAttribute="bottom" constant="3" id="d0h-id-2xp"/>
+                            <constraint firstItem="LJd-0p-5DK" firstAttribute="top" secondItem="znN-0I-dEo" secondAttribute="bottom" constant="58" id="d6F-ow-M3O"/>
+                            <constraint firstItem="znN-0I-dEo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dvT-WL-3sK"/>
+                            <constraint firstItem="le9-IF-pSm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="hsz-16-XlO" userLabel="Start Process.top = Safe Area.top + 150"/>
+                            <constraint firstItem="znN-0I-dEo" firstAttribute="top" secondItem="tPo-0m-XCe" secondAttribute="bottom" constant="8" id="iCn-zY-3qu"/>
+                            <constraint firstItem="HZF-5g-FmE" firstAttribute="leading" secondItem="znN-0I-dEo" secondAttribute="leading" id="jYz-q8-tL7"/>
+                            <constraint firstItem="rb8-O5-pYd" firstAttribute="centerY" secondItem="HZF-5g-FmE" secondAttribute="centerY" id="rR4-Wt-gmz"/>
+                            <constraint firstItem="Ubn-wk-UsZ" firstAttribute="top" secondItem="HZF-5g-FmE" secondAttribute="bottom" constant="8" id="toM-CS-PG2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="StartDelegateSwitch" destination="rb8-O5-pYd" id="gg2-qc-sN2"/>
+                        <outlet property="eventOneDelegateSwitch" destination="Y9X-4H-OnZ" id="E3Y-sO-wrb"/>
+                        <outlet property="eventTriggeredSegmentedControl" destination="znN-0I-dEo" id="xOo-XT-5FC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133" y="95"/>
         </scene>
     </scenes>
 </document>
