@@ -32,6 +32,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        eventBus.register(forEvent: StartProcess.self)
+        eventBus.register(forEvent: EventOne.self)
+        eventBus.register(forEvent: EndProcess.self)
         eventBus.add(subscriber: eventTriggeredSegmentedControl, for: StartProcess.self)
         eventBus.add(subscriber: eventTriggeredSegmentedControl, for: EventOne.self)
         eventBus.add(subscriber: eventTriggeredSegmentedControl, for: EndProcess.self)
