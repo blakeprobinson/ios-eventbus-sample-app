@@ -10,8 +10,8 @@
 		C06785B224EF26AE00F27BB4 /* EventTriggeredSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06785B124EF26AE00F27BB4 /* EventTriggeredSegmentedControl.swift */; };
 		C06785B824EF274000F27BB4 /* StartDelegateSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06785B724EF273F00F27BB4 /* StartDelegateSwitch.swift */; };
 		C06785BA24EF276400F27BB4 /* EventOneDelegateSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06785B924EF276400F27BB4 /* EventOneDelegateSwitch.swift */; };
-		C078B88E24ED7FDD0043C5F5 /* EventBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C078B88224ED7F240043C5F5 /* EventBus.framework */; };
-		C078B88F24ED7FDD0043C5F5 /* EventBus.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C078B88224ED7F240043C5F5 /* EventBus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0C09C1224EFAD5F0023C0F9 /* EventBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C09C0B24EFAD4F0023C0F9 /* EventBus.framework */; };
+		C0C09C1324EFAD5F0023C0F9 /* EventBus.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0C09C0B24EFAD4F0023C0F9 /* EventBus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C0D6878024ED79FA00A05785 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D6877F24ED79FA00A05785 /* AppDelegate.swift */; };
 		C0D6878224ED79FA00A05785 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D6878124ED79FA00A05785 /* SceneDelegate.swift */; };
 		C0D6878424ED79FA00A05785 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D6878324ED79FA00A05785 /* ViewController.swift */; };
@@ -22,30 +22,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C078B88124ED7F240043C5F5 /* PBXContainerItemProxy */ = {
+		C0C09C0A24EFAD4F0023C0F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C078B87A24ED7F240043C5F5 /* EventBus.xcodeproj */;
+			containerPortal = C0C09C0324EFAD4F0023C0F9 /* EventBus.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BF2118351DF488DF00FF863D;
 			remoteInfo = "EventBus (Framework)";
 		};
-		C078B88324ED7F240043C5F5 /* PBXContainerItemProxy */ = {
+		C0C09C0C24EFAD4F0023C0F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C078B87A24ED7F240043C5F5 /* EventBus.xcodeproj */;
+			containerPortal = C0C09C0324EFAD4F0023C0F9 /* EventBus.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BF4B823E1F41ACC1009A317D;
 			remoteInfo = "EventBus (Static Library)";
 		};
-		C078B88524ED7F240043C5F5 /* PBXContainerItemProxy */ = {
+		C0C09C0E24EFAD4F0023C0F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C078B87A24ED7F240043C5F5 /* EventBus.xcodeproj */;
+			containerPortal = C0C09C0324EFAD4F0023C0F9 /* EventBus.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BF21183E1DF488DF00FF863D;
 			remoteInfo = EventBusTests;
 		};
-		C078B88724ED7F240043C5F5 /* PBXContainerItemProxy */ = {
+		C0C09C1024EFAD4F0023C0F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C078B87A24ED7F240043C5F5 /* EventBus.xcodeproj */;
+			containerPortal = C0C09C0324EFAD4F0023C0F9 /* EventBus.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BF2118551DF5772800FF863D;
 			remoteInfo = "EventBus iOS";
@@ -66,7 +66,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C078B88F24ED7FDD0043C5F5 /* EventBus.framework in Embed Frameworks */,
+				C0C09C1324EFAD5F0023C0F9 /* EventBus.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,7 +77,7 @@
 		C06785B124EF26AE00F27BB4 /* EventTriggeredSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTriggeredSegmentedControl.swift; sourceTree = "<group>"; };
 		C06785B724EF273F00F27BB4 /* StartDelegateSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDelegateSwitch.swift; sourceTree = "<group>"; };
 		C06785B924EF276400F27BB4 /* EventOneDelegateSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventOneDelegateSwitch.swift; sourceTree = "<group>"; };
-		C078B87A24ED7F240043C5F5 /* EventBus.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EventBus.xcodeproj; path = "../../../../Downloads/EventBus-master/EventBus.xcodeproj"; sourceTree = "<group>"; };
+		C0C09C0324EFAD4F0023C0F9 /* EventBus.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EventBus.xcodeproj; path = "EventBus-master/EventBus.xcodeproj"; sourceTree = "<group>"; };
 		C0D6877C24ED79FA00A05785 /* EventBusProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventBusProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0D6877F24ED79FA00A05785 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0D6878124ED79FA00A05785 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C078B88E24ED7FDD0043C5F5 /* EventBus.framework in Frameworks */,
+				C0C09C1224EFAD5F0023C0F9 /* EventBus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,13 +110,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C078B87B24ED7F240043C5F5 /* Products */ = {
+		C0C09C0424EFAD4F0023C0F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C078B88224ED7F240043C5F5 /* EventBus.framework */,
-				C078B88424ED7F240043C5F5 /* libEventBus.a */,
-				C078B88624ED7F240043C5F5 /* EventBusTests.xctest */,
-				C078B88824ED7F240043C5F5 /* EventBus iOS.app */,
+				C0C09C0B24EFAD4F0023C0F9 /* EventBus.framework */,
+				C0C09C0D24EFAD4F0023C0F9 /* libEventBus.a */,
+				C0C09C0F24EFAD4F0023C0F9 /* EventBusTests.xctest */,
+				C0C09C1124EFAD4F0023C0F9 /* EventBus iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 		C0D687A124ED7B9D00A05785 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C078B87A24ED7F240043C5F5 /* EventBus.xcodeproj */,
+				C0C09C0324EFAD4F0023C0F9 /* EventBus.xcodeproj */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -245,8 +245,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C078B87B24ED7F240043C5F5 /* Products */;
-					ProjectRef = C078B87A24ED7F240043C5F5 /* EventBus.xcodeproj */;
+					ProductGroup = C0C09C0424EFAD4F0023C0F9 /* Products */;
+					ProjectRef = C0C09C0324EFAD4F0023C0F9 /* EventBus.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -258,32 +258,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		C078B88224ED7F240043C5F5 /* EventBus.framework */ = {
+		C0C09C0B24EFAD4F0023C0F9 /* EventBus.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = EventBus.framework;
-			remoteRef = C078B88124ED7F240043C5F5 /* PBXContainerItemProxy */;
+			remoteRef = C0C09C0A24EFAD4F0023C0F9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C078B88424ED7F240043C5F5 /* libEventBus.a */ = {
+		C0C09C0D24EFAD4F0023C0F9 /* libEventBus.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libEventBus.a;
-			remoteRef = C078B88324ED7F240043C5F5 /* PBXContainerItemProxy */;
+			remoteRef = C0C09C0C24EFAD4F0023C0F9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C078B88624ED7F240043C5F5 /* EventBusTests.xctest */ = {
+		C0C09C0F24EFAD4F0023C0F9 /* EventBusTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = EventBusTests.xctest;
-			remoteRef = C078B88524ED7F240043C5F5 /* PBXContainerItemProxy */;
+			remoteRef = C0C09C0E24EFAD4F0023C0F9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C078B88824ED7F240043C5F5 /* EventBus iOS.app */ = {
+		C0C09C1124EFAD4F0023C0F9 /* EventBus iOS.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = "EventBus iOS.app";
-			remoteRef = C078B88724ED7F240043C5F5 /* PBXContainerItemProxy */;
+			remoteRef = C0C09C1024EFAD4F0023C0F9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
