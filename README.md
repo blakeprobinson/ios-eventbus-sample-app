@@ -6,3 +6,4 @@ Since I ran into some issues the sample app for EventBus, I went ahead and creat
 It has three events, two of which have delegates that listen to the events and are notified about them. 
 
 There's a basic UI that let's you start the process of events, view the events getting triggered, and reset the process. 
+
